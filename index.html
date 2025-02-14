@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Levitch</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <meta name="description" content="">
 
@@ -19,14 +19,50 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
-
+<style src="assets/css/style.css"></style>
 <body>
+  <div class="warning">
+    <p><strong>Warning: </strong>This is a demo website!!</p>
+</div>
+<header>
+    <div class="container">
+        <h1>Levitch</h1>
+        <button class="log-in"><img src="/assets/img/wired-outline-21-avatar-hover-jumping (1).png"></button>
+        <a href="/shopping.html">
+            <button class="shopping"><img src="/assets/img/wired-outline-146-trolley-hover-jump.png"></button>
+        </a>
+        <button class="menu"><img src="/assets/img/menu.png"></button>
+    </div>
+</header>
+<main>
+    <!-- Sidebar structure -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="assets/js/app.js"></script>
+    <!-- Modal structure -->
+    <div id="loginModal" class="modal">
+        <div class="card">
+            <span class="close">&times;</span>
+            <h1>Log-in</h1>
+            <form action="/log-in.html" method="post">
+                <input type="text" name="username" placeholder="E-mail" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Log-in</button>
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
 
+</footer>
+<script src="/assets/js/menu.js"></script>
 </body>
 
 </html>
