@@ -17,7 +17,7 @@ body {
   align-items: center;
 }
 
-header {
+/*header {
   color: #000000;
   background-color: #ffffff;
   display: flex;
@@ -29,8 +29,42 @@ header {
   right: 0;
   width: 100%;
   height: 8%;
-  border-bottom: 1px solid #000000;
   border-top: 1px solid #000000;
+}*/
+
+header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center;
+  font-family: 'Playfair Display', serif; /* Apply the new font */
+  position: fixed; /* Fix the header to the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure the header is above other content */
+  width: 100%;
+  height: 7%;
+}
+
+header h1 {
+  margin: 0;
+  margin-left: 10px;
+  color: #000000;
+  position: relative;
+}
+
+header h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
 }
 
 .log-in {
@@ -38,7 +72,7 @@ header {
   border: none;
   position: absolute;
   right: 70px;
-  top: 30%;
+  top: 35%;
 }
 
 .shopping {
@@ -46,7 +80,7 @@ header {
   border: none;
   position: absolute;
   right: 2%;
-  top: 30%;
+  top: 35%;
 }
 
 .menu {
@@ -54,7 +88,7 @@ header {
   border: none;
   position: absolute;
   left: 2%;
-  top: 30%;
+  top: 35%;
 }
 
 button img {
@@ -67,7 +101,7 @@ button img {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 2000; /* Stay on top */
   top: 0;
   left: 0;
   background-color: #111; /* Black */
@@ -217,4 +251,98 @@ button img {
 
 .card button:hover {
   background-color: #4e3bbd;
+}
+
+.big-image-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.big-image {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: -25px;
+  z-index: -1;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.category {
+  width: 45%;
+  margin: 1rem 0;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.category:hover {
+  transform: scale(1.05);
+}
+
+.category a {
+  display: block;
+  padding: 2rem;
+  color: #090088;
+  text-decoration: none;
+}
+
+.category-content {
+  position: relative;
+}
+
+.category-content h2 {
+  margin: 0;
+  padding: 1rem 0;
+  background-color: #090088;
+  color: #ffffff;
+  border-radius: 0 0 8px 8px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr); /* Ensure a maximum of four columns */
+  }
+} 
+
+.product {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.02);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.product p {
+  margin: 0;
+  color: #090088;
+  font-weight: bold;
 }
