@@ -267,12 +267,6 @@ button img {
   z-index: -1;
 }
 
-.categories-container {
-  display: flex;
-  justify-content: space-around;
-  margin: 2rem 0;
-}
-
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -328,7 +322,7 @@ button img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
-  padding: 2rem;
+  padding: 0;
 }
 
 
@@ -339,7 +333,14 @@ button img {
 } 
 
 .category img {
-  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   height: auto;
 }
 
+.category h3 {
+  position: absolute;
+  margin: 0;
+  padding: 0.5rem;
+}
