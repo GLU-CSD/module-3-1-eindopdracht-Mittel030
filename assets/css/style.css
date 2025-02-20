@@ -309,28 +309,14 @@ button img {
   font-weight: bold;
 }
 
-.copy-right {
-  background-color: #808080;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  height: 35px;
-  align-items: center;
-}
-
 .categorys {
   display: grid;
+  position: relative;
+
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   padding: 0;
 }
-
-
-@media (min-width: 768px) {
-  .categorys {
-    grid-template-columns: repeat(3, 1fr); /* Ensure a maximum of three columns */
-  }
-} 
 
 .category img {
   display: flex;
@@ -341,6 +327,22 @@ button img {
 
 .category h3 {
   position: absolute;
-  margin: 0;
+  top: 0;
+  left: 0;
   padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .categorys {
+    grid-template-columns: repeat(3, 1fr); /* Ensure a maximum of three columns */
+  }
+} 
+
+.copy-right {
+  background-color: #808080;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  align-items: center;
 }
