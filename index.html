@@ -1,116 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Levitch</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="description" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Levitch</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <meta name="description" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+    <link rel="icon" href="/assets/img/Levitch-logo.png" sizes="any" />
+    <link rel="icon" href="/assets/img/Levitch-logo.png" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <meta name="theme-color" content="#fafafa">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-</head>
-<body>
-  <div class="warning">
-    <p><strong>Warning: </strong>This is a demo website!!</p>
-</div>
-<header>
-    <div class="container">
-        <h1>Levitch</h1>
-        <button class="log-in"><img src="/assets/img/wired-outline-21-avatar-hover-jumping (1).png"></button>
-        <a href="/shopping.html">
-            <button class="shopping"><img src="/assets/img/wired-outline-146-trolley-hover-jump.png"></button>
-        </a>
-        <button class="menu"><img src="/assets/img/2849812_menu_multimedia_bars_media_icon.png"></button>
+    <meta name="theme-color" content="#fafafa" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="warning">
+      <p><strong>Warning: </strong>This is a demo website!!</p>
     </div>
-</header>
-<main>
-    <!-- Sidebar structure -->
-    <div id="sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <header>
+      <div class="container">
+        <h1>Levitch</h1>
+        <button class="log-in">
+          <img
+            src="/assets/img/wired-outline-21-avatar-hover-jumping (1).png"
+          />
+        </button>
+        <a href="/shopping-cart.html">
+          <button class="shopping">
+            <img src="/assets/img/wired-outline-146-trolley-hover-jump.png" />
+          </button>
+        </a>
+        <button class="menu">
+          <img src="/assets/img/2849812_menu_multimedia_bars_media_icon.png" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- Sidebar structure -->
+      <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
         <a href="index.html">Home</a>
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Contact</a>
-    </div>
-
-    <div class="big-image-container">
-        <img src="/assets/img/Herobanner desktop desert 1.webp" alt="Big Image" class="big-image">
+        <a href="men.html">Men</a>
+        <a href="men.html">Woman</a>
+        <a href="men.html">Hats</a>
+        <form class="price-range-form">
+          <h2>Price Range</h2><input type="range" name="range" placeholder="Range" min="1" max="101" step="10" /><br>
+        </form>
+        <img src="/assets/img/Levitch-logo.png" alt="Levitch Logo" class="sidebar-logo"/>
       </div>
 
-    <!-- Products Grid -->
-    <div class="products-grid">
+      <div class="big-image-container">
+        <img
+          src="/assets/img/Herobanner desktop desert 1.webp"
+          alt="Big Image"
+          class="big-image"
+        />
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid">
         <div class="product">
-          <img src="/assets/img/72117e9b55cd820f587e704cd58ac755.jpg" alt="Product 1">
+          <img
+            src="/assets/img/72117e9b55cd820f587e704cd58ac755.jpg"
+            alt="Product 1"
+          />
           <h3>Product 1</h3>
           <p>&euro; 19.99</p>
         </div>
         <div class="product">
-          <img src="/assets/img/72117e9b55cd820f587e704cd58ac755.jpg" alt="Product 2">
+          <img
+            src="/assets/img/72117e9b55cd820f587e704cd58ac755.jpg"
+            alt="Product 2"
+          />
           <h3>Product 2</h3>
           <p>&euro; 29.99</p>
         </div>
         <div class="product">
-          <img src="/assets/img/72117e9b55cd820f587e704cd58ac755.jpg" alt="Product 3">
+          <img
+            src="/assets/img/72117e9b55cd820f587e704cd58ac755.jpg"
+            alt="Product 3"
+          />
           <h3>Product 3</h3>
           <p>&euro; 39.99</p>
         </div>
         <div class="product">
-          <img src="/assets/img/72117e9b55cd820f587e704cd58ac755.jpg" alt="Product 4">
+          <img
+            src="/assets/img/72117e9b55cd820f587e704cd58ac755.jpg"
+            alt="Product 4"
+          />
           <h3>Product 4</h3>
           <p>&euro; 49.99</p>
         </div>
       </div>
 
       <div class="categorys">
-        <a href="/shop.html">
-        <div class="category">
-          <img src="/assets/img/2 desktop desert 1.webp" alt="Men">
-          <div class="men"><h3>Men</h3></div>
-        </div>
-      </a>
-      <a href="/shop.html">
-        <div class="category">
-          <img src="/assets/img/3 desktop desert 1.webp" alt="Hats">
-          <div class="hats"><h3>Hats</h3></div>
-        </div>
-      </a>
-      <a href="/shop.html">
-        <div class="category">
-          <img src="/assets/img/4 desktop desert 1.webp" alt="Woman">
-          <div class="woman"><h3>Women</h3></div>
-        </div>
-      </a>
+        <a href="/men.html">
+          <div class="category">
+            <img src="/assets/img/2 desktop desert 1.webp" alt="Men" />
+            <div class="men"><h3>Men</h3></div>
+          </div>
+        </a>
+        <a href="/men.html">
+          <div class="category">
+            <img src="/assets/img/3 desktop desert 1.webp" alt="Hats" />
+            <div class="hats"><h3>Hats</h3></div>
+          </div>
+        </a>
+        <a href="/men.html">
+          <div class="category">
+            <img src="/assets/img/4 desktop desert 1.webp" alt="Woman" />
+            <div class="woman"><h3>Women</h3></div>
+          </div>
+        </a>
       </div>
 
-    <!-- Modal structure -->
-    <div id="loginModal" class="modal">
+      <!-- Modal structure -->
+      <div id="loginModal" class="modal">
         <div class="card">
-            <span class="close">&times;</span>
-            <h1>Log-in</h1>
-            <form action="/log-in.html" name="login" method="post">
-                <input type="text" name="username" placeholder="E-mail" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <button type="submit">Log-in</button>
-            </form>
+          <span class="close">&times;</span>
+          <h1>Log-in</h1>
+          <form action="/log-in.html" name="login" method="post">
+            <input type="text" name="username" placeholder="E-mail" required />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Log-in</button>
+          </form>
         </div>
-    </div>
-</main>
-<footer>
-    <div class="copy-right"><p>&copy; 2025 Levitch</p></div>
-</footer>
-<script src="/assets/js/menu.js"></script>
-</body>
-
+      </div>
+    </main>
+    <footer>
+      <div class="copy-right"><p>&copy; 2025 Levitch</p></div>
+    </footer>
+    <script src="/assets/js/menu.js"></script>
+  </body>
 </html>

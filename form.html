@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levitch</title>
+    <link rel="stylesheet" href="/assets/css/form.css">
+    <link rel="icon" href="/assets/img/Levitch-logo.png" sizes="any" />
+    <link rel="icon" href="/assets/img/Levitch-logo.png" type="image/svg+xml" />
+</head>
+<body>
+    <div class="warning">
+        <p><strong>Warning: </strong>This is a demo website!!</p>
+    </div>
+    <header>
+        <div class="container">
+            <h1>Levitch</h1>
+            <button class="log-in">
+                <img src="/assets/img/wired-outline-21-avatar-hover-jumping (1).png" />
+            </button>
+            <a href="/shopping-cart.html">
+                <button class="shopping">
+                    <img src="/assets/img/wired-outline-146-trolley-hover-jump.png" />
+                </button>
+            </a>
+            <button class="menu">
+                <img src="/assets/img/2849812_menu_multimedia_bars_media_icon.png" />
+            </button>
+        </div>
+    </header>
+    <main>
+        <!-- Sidebar structure -->
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="men.html">Men</a>
+            <a href="men.html">Woman</a>
+            <a href="men.html">Hats</a>
+            <form class="price-range-form">
+                <h2>Price Range</h2><input type="range" name="range" placeholder="Range" min="1" max="101" step="10" /><br>
+              </form>
+            <img src="/assets/img/Levitch-logo.png" alt="Levitch Logo" class="sidebar-logo"/>
+        </div>
+
+        <div class="form-container">
+            <form>
+                <h2 class="form-title">JE GEGEVENS<span class="orange">.</span></h2>
+                <p class="form-subtitle">Wat moet er op het factuur staan?</p>
+
+                <div class="form-group">
+                    <label>Type bestelling</label>
+                    <div class="inputs">
+                        <label><input type="radio" name="order_type" checked><span class="checkmark"></span> Particulier</label>
+                        <label><input type="radio" name="order_type"><span class="checkmark"></span> Zakelijk</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Aanhef</label>
+                    <div class="inputs">
+                        <label><input type="radio" name="salutation" checked><span class="checkmark"></span> Dhr.</label>
+                        <label><input type="radio" name="salutation"><span class="checkmark"></span> Mevr.</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Naam</label>
+                    <div class="inputs">
+                        <input type="text" name="firstname" placeholder="Voornaam">
+                        <input type="text" name="middlename" placeholder="Tussenv.">
+                        <input type="text" name="lastname" placeholder="Achternaam">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Postcode</label>
+                    <input type="text" name="postcode" placeholder="1234AB">
+                </div>
+
+                <div class="form-group">
+                    <label>Huisnummer</label>
+                    <div class="inputs">
+                        <input type="text" name="housenumber" placeholder="Nr.">
+                        <input type="text" name="housenumberadd" placeholder="Toev.">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Land</label>
+                    Nederland <a href="#"><i class="fa-solid fa-angle-right"></i> In België laten bezorgen</a>
+                </div>
+
+                <div class="form-group">
+                    <label>Afleveradres</label>
+                    <div class="inputs">
+                        <label><input type="radio" name="shipping" checked><span class="checkmark"></span> Op bovenstaand adres bezorgen</label>
+                        <label><input type="radio" name="shipping"><span class="checkmark"></span> Op ander adres bezorgen</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>E-mailadres</label>
+                    <input type="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label>Telefoonnummer</label>
+                    <input type="tel" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label>Geboortedatum</label>
+                    <input type="text" name="dateOfBirth" placeholder="dd-mm-jjjj">
+                </div>
+
+                <div class="form-group">
+                    <label>Verzendwijze factuur</label>
+                    <div class="inputs">
+                        <label><input type="radio" name="invoice" checked><span class="checkmark"></span> Factuur per e-mail</label>
+                        <label><input type="radio" name="invoice"><span class="checkmark"></span> Factuur geprint bij de bestelling</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Nieuwsbrief</label>
+                    <input type="checkbox" name="newsletter" checked>
+                    <label>Ja, ik wil de nieuwsbrief met <span class="orange" style="font-weight: 700;">&euro;5,- cadeaubon</span> voor mijn volgende bestelling</label>
+                </div>
+
+                <div class="form-group">
+                    <label>Kleur verpakking</label>
+                    <input type="color" name="color">
+                </div>
+
+                <h2 class="form-title">BEWAAR JE GEGEVENS<span class="orange">.</span></h2>
+                <p class="form-subtitle">Handig voor de volgende keer.</p>
+
+                <div class="form-group">
+                    <label>Wachtwoord</label>
+                    <input type="password" name="password">
+                    <p class="description">Minimaal 6 karakters.<br>Verder doen we niet zo moeilijk.</p>
+                </div>
+
+                <div class="form-group">
+                    <label>Wachtwoord bevestigen</label>
+                    <input type="password" name="passwordConfirm">
+                </div>
+
+                <button type="submit" class="submit-button">Verzenden</button>
+            </form>
+        </div>
+        <!-- Modal structure -->
+      <div id="loginModal" class="modal">
+        <div class="card">
+          <span class="close">&times;</span>
+          <h1>Log-in</h1>
+          <form action="/log-in.html" name="login" method="post">
+            <input type="text" name="username" placeholder="E-mail" required />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Log-in</button>
+          </form>
+        </div>
+      </div>
+      <!-- Modal structure -->
+      <div id="loginModal" class="modal">
+        <div class="card">
+          <span class="close">&times;</span>
+          <h1>Log-in</h1>
+          <form action="/log-in.html" name="login" method="post">
+            <input type="text" name="username" placeholder="E-mail" required />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Log-in</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="/assets/js/menu.js"></script>
+</body>
+</html>
